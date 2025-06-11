@@ -5,7 +5,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { Progress } from '@/components/Progress'
 import { Transaction, TransactionProps } from '@/components/Transaction'
 import { useTargetDatabase } from '@/database/useTargetDatabase'
-import { useTransactionDatabase } from '@/database/useTransactionsDatabase'
+import { useTransactionsDatabase } from '@/database/useTransactionsDatabase'
 import { numberToCurrency } from '@/utils/numberToCurrency'
 import { TransactionTypes } from '@/utils/TransactionTypes'
 import { router, useFocusEffect, useLocalSearchParams } from 'expo-router'
@@ -25,7 +25,7 @@ export default function InProgress() {
   const params = useLocalSearchParams<{ id: string }>()
 
   const targetDatabase = useTargetDatabase()
-  const transactionsDatabase = useTransactionDatabase()
+  const transactionsDatabase = useTransactionsDatabase()
 
   async function fetchTargetDetails() {
     try {
