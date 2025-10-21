@@ -4,8 +4,10 @@
     "slug": "target",
     "scheme": "target",
     "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
     "android": {
-      "package": "com.arthurrios.target",
+      "package": "com.luciano.target",
       "edgeToEdgeEnabled": true,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
@@ -13,7 +15,7 @@
       }
     },
     "ios": {
-      "bundleIdentifier": "com.arthurrios.target",
+      "bundleIdentifier": "com.luciano.target",
       "icon": "./assets/ios-icon.png"
     },
     "plugins": [

@@ -60,5 +60,9 @@ export function useTransactionsDatabase() {
       `)
   }
 
+  // async function limpa() {
+  //   await database.runAsync('DELETE FROM transactions where target_id = 6;')
+  // }
+
   return { create, listByTargetId, remove, summary }
 }

@@ -37,6 +37,7 @@ export default function Index() {
   async function fetchSummary(): Promise<HomeHeaderProps> {
     try {
       const response = await transactionsDatabase.summary()
+      // const rr = await transactionsDatabase.limpa()
 
       return {
         total: numberToCurrency(response.input + response.output),

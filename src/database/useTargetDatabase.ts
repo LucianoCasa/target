@@ -21,6 +21,7 @@ export type TargetResponse = {
 
 export function useTargetDatabase() {
   const database = useSQLiteContext()
+  database.execAsync('PRAGMA foreign_keys = ON;')
 
   async function create(data: TargetCreate) {
     const statement = await database.prepareAsync(
